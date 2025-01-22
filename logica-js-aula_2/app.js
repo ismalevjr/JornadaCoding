@@ -20,10 +20,11 @@ while (chute != numeroSecreto){
         }
         //tentativas = tentativas +1;
         tentativas ++;
+    }
 }
 
 if(tentativas > 1){
     alert(`Isso ai! Você descobriu o número secreto é ${numeroSecreto} com ${tentativas} tentativas`);
-}else{
+    alert(`Isso ai! Você descobriu o número secreto é ${numeroSecreto} com ${tentativas} tentativa`);
     alert(`Isso ai! Você descobriu o número secreto é ${numeroSecreto} com ${tentativa} tentativa`);
 }
