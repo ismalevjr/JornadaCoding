@@ -20,7 +20,6 @@ while (chute != numeroSecreto){
         }
         //tentativas = tentativas +1;
         tentativas ++;
-    }
 }
 
 if(tentativas > 1){
