@@ -1,9 +1,16 @@
 function sortear(){
-   let quantidadeDeNumeros = document.getElementById("quantidade").value;
-   let numeroMinimo = document.getElementById("de").value;
-   let  numeroMaximo = document.getElementById("ate").value;
+   let quantidadeDeNumeros = parseInt(document.getElementById("quantidade").value);
+   let numeroMinimo = parseInt(document.getElementById("de").value);
+   let  numeroMaximo = parseInt(document.getElementById("ate").value);
 
-   alert(`quantidade: ${quantidadeDeNumeros}`);
-   alert(`Do número: ${numeroMinimo}`);
-   alert(`Até o número: ${numeroMaximo}`);
+   for (let i = 0 ; i < quantidadeDeNumeros; i++) {
+      let numeroSorteado = gerarNumeroAleatorio(numeroMinimo,numeroMaximo);
+      alert(numeroSorteado);
+   }
 }
+
+
+function gerarNumeroAleatorio (min,max) {
+   return parseInt(Math.random()* (max - min) + min);
+}
+
