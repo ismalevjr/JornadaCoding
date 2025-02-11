@@ -1,8 +1,6 @@
 function adicionar (){
 
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];  
-    
+
     let produtoSelecionado = document.getElementById("produto").value;
     let listaDeProdutos = [];
     let carrinhoDeCompras = 0;
@@ -25,6 +23,7 @@ function adicionar (){
     carrinhoDeCompras = carrinhoDeCompras + valorProduto;
 
     console.log(listaDeProdutos);
-    }
+    console.log(carrinhoDeCompras);
+
 
 }
