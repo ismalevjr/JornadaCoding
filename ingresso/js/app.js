@@ -1,6 +1,7 @@
-let pista = 100;
-let CadeiraSuperior = 200;
-let CadeiraInferior = 400;
+let pista = parseInt(document.getElementById("qtd-pista").textContent);
+let CadeiraSuperior = parseInt(document.getElementById("qtd-superior").textContent);
+let CadeiraInferior = parseInt(document.getElementById("qtd-inferior").textContent);
+
 
 function comprar(){
     //Resgatando os valores escolhidos no input
